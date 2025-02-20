@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FluFlow</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="heading">FluFlo</h1>
+    
+    <div class="main-content">
+      <div class="picker-section">
+        <span class="subtitle">Translate to</span>
+        <div id="single-select-container" class="airtable-select">
+          <div class="select-input">
+            <div id="selected-single-item" class="selected-items"></div>
+            <div class="select-placeholder">Select a language</div>
+            <div class="select-chevron"></div>
+          </div>
+          <div class="select-dropdown">
+            <!-- Options will be injected here -->
+          </div>
+        </div>
+      </div>
+
+      <div class="picker-section">
+        <span class="subtitle">Translate from</span>
+        <div id="multi-select-container" class="airtable-select">
+          <div class="select-input">
+            <div id="selected-items" class="selected-items"></div>
+            <div class="select-placeholder">Select languages</div>
+            <div class="select-chevron"></div>
+          </div>
+          <div class="select-dropdown">
+            <!-- Options will be injected here -->
+          </div>
+        </div>
+      </div>
+
+      <div class="toggle-container">
+        <span class="subtitle">Auto-translate</span>
+        <label class="toggle-switch">
+          <input type="checkbox" id="toggleTranslation" style="display: none;">
+          <div class="toggle-slider"></div>
+        </label>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="languages.js"></script>
+  <script type="module" src="popup.js"></script>
+</body>
+</html> 
