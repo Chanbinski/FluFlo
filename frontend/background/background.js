@@ -6,7 +6,7 @@ chrome.runtime.onInstalled.addListener(() => {
   });
 }); 
 
-const API_ENDPOINT = 'http://localhost:3000/api/chat';  // Your backend server endpoint
+const API_ENDPOINT = 'https://fluflo.onrender.com/api/chat';  // Your backend server endpoint
 
 // Listen for messages from content script
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
