@@ -167,7 +167,7 @@ const textAnalysis = {
                 for (let i = words.length - 1; i >= 0; i--) {
                     const currentWord = words[i];
                     const detectedLang = franc(currentWord, { 
-                        only: state.sourceLangCodes,
+                        only: [...state.sourceLangCodes, state.targetLangCode],
                         minLength: 1 
                     });
                     if (detectedLang !== state.targetLangCode && detectedLang !== 'und') {
